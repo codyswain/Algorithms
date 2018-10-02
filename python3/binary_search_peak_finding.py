@@ -3,6 +3,10 @@ __author__ = "Cody Swain"
 import time
 import math
 
+## TO DO ##
+# This algorithm is inefficient because it passes the whole array with each recursive pass.
+# Memory usage can be reduced simply using the indices with a while loop. 
+
 def binary_search(arr):
 	'''Binary search peak finding for a one dimensional array
 	Parameters
