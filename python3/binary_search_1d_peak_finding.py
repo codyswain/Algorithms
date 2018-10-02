@@ -7,7 +7,7 @@ import math
 # This algorithm is inefficient because it passes the whole array with each recursive pass.
 # Memory usage can be reduced simply using the indices with a while loop. 
 
-def binary_search(arr):
+def binary_search_1d(arr):
 	'''Binary search peak finding for a one dimensional array
 	Parameters
 	----------
