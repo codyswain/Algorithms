@@ -5,7 +5,7 @@ import math
 
 '''
 In Python, all variables are passed by reference. 
-This allows recursive function calls for binary search peak finding. 
+This allows for efficient recursive function calls for binary search peak finding. 
 '''
 def measure_time(method):
 	def timed(*args, **kwargs):
