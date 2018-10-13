@@ -1,5 +1,3 @@
-__author__ = "Cody Swain"
-
 '''Creating custom dict'''
 class HashTable:
 	def __init__(self):
