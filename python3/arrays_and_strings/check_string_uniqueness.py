@@ -1,10 +1,15 @@
 __author__ = "Cody Swain"
-# Solution makes use of the fact that list lookup in python
-# (if a in b) has a runtime complexity of O(n) while
-# set lookup has a runtime complexity of O(1)
 
 class Solution(object):
 	def is_unique_string(self, str):
+		''' 
+		Solution makes use of the fact that list lookup in python
+		(if a in b) has a runtime complexity of O(n) while
+		set lookup has a runtime complexity of O(1). 
+		This is because set() is an implementation of a hash 
+		table which has on average O(1) lookup
+		'''
+
 		if len(str) > 128: 	# 128 chars in normal ascii
 			return False	# 256 chars in extended ascii
 							# Unicode would be 1,114,112
