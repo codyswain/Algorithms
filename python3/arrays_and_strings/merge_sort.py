@@ -1,6 +1,9 @@
 __author__ = "Cody Swain"
 
 class MergeSort(object):
+	'''Merge sort algorithm
+ 	This algorithm has a time complexity of O(Nlog(N))
+	The space complexity is slightly harder to determine.'''
 	def merge_sort(self, array):
 		print("Splitting {}".format(array))
 		if len(array) > 1:
