@@ -1,6 +1,6 @@
 __author__ = "Cody Swain"
 
-class Solution(object):
+class MergeSort(object):
 	def merge_sort(self, array):
 		print("Splitting {}".format(array))
 		if len(array) > 1:
