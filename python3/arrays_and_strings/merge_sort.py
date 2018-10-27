@@ -1,6 +1,17 @@
 __author__ = "Cody Swain"
 
 class Solution(object):
+	def merge_sort(self, array):
+		print("Splitting {}".format(array))
+		if len(array) > 1:
+			mid = len(array) // 2
+			left_half = array[:mid]
+			right_half = array[mid:]
+			self.merge_sort(left_half)
+			self.merge_sort(right_half)
+			self.merge(left_half, right_half, array)
+		print("Merging {}".format(array))
+
 	def merge(self, left_half, right_half, array):
 		i=0
 		j=0
@@ -23,17 +34,6 @@ class Solution(object):
 			array[k] = right_half[j]
 			j+=1
 			k+=1
-
-	def merge_sort(self, array):
-		print("Splitting {}".format(array))
-		if len(array) > 1:
-			mid = len(array) // 2
-			left_half = array[:mid]
-			right_half = array[mid:]
-			self.merge_sort(left_half)
-			self.merge_sort(right_half)
-			self.merge(left_half, right_half, array)
-		print("Merging {}".format(array))
 
 
 if __name__ == "__main__":
