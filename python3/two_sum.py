@@ -1,3 +1,5 @@
+__author__ = "Cody Swain"
+
 class Solution(object):
 	def get_two_sum(self, array, two_sum):
 		previous_nums = dict()
