@@ -68,6 +68,34 @@ class Solution:
 
 		return merged_list
 
+	def merge_two_lists(self, l1: LinkedList, l2: LinkedList) -> LinkedList:
+		'''Revisited. This solution was procured in 8 minutes'''
+		node = ListNode(None)
+		merged = node
+
+		while l1 or l2:
+			if not l1:
+				new_node = ListNode(l2.val)
+				node.next = new_node
+				l2 = l2.next
+				node = node.next
+			elif not l2:
+				new_node = ListNode(l1.val)
+				node.next = new_node
+				l1 = l1.next
+				node = node.next
+			else:
+				if l1.val < l2.val:
+					new_node = ListNode(l1.val)
+					node.next = new_node
+					l1 = l1.next
+					node = node.next
+				else:
+					new_node = ListNode(l2.val)
+					node.next = new_node
+					l2 = l2.next
+					node = node.next
+
 
 if __name__ == "__main__":
 
